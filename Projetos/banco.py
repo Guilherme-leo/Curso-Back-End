@@ -6,7 +6,11 @@ print("".center(60, "-"))
 
 while operacao != "q":
     if operacao == "d":
-        saldo += float(input("Informe o valor a ser depositado "))
+        v = float(input("Informe o valor a ser depositado "))
+        if v > 0:
+            saldo += v
+        else:
+            print("Valor Inválido ")
 
     elif operacao == "e":
         print("Extrato".center(60, "-"))
@@ -16,7 +20,7 @@ while operacao != "q":
     elif operacao == "s" and limite_saque > 0:
         saque = float(input("Informe o valor a ser sacado "))
 
-        if saldo >= saque and saque <= 500:
+        if (saldo >= saque) and (saque <= 500) and (saque > 0):
             saldo -= saque
             limite_saque -= 1
         else:
