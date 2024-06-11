@@ -1,7 +1,7 @@
 usuario_teste = {
-    "nome": "Leo",
+    "nome": "Leona",
     "nascimento": "10/03/2010",
-    "cpf": "00079425612",
+    "cpf": "63879425612",
     "endereco": "Rua Bahia",
 }
 
